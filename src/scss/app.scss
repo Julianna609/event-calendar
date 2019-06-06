@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+// Import abstract
+@import './abstracts/mixins';
+
+// Import components
+@import './components/event-form';
+@import './components/day-card';
+
+// Import pages
+@import './pages/home';

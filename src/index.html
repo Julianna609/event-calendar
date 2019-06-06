@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Список мероприятий</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div id="eventsList"></div>
+      </div>
+    </section>
+
+    <section class="section grey">
+      <div class="container">
+        <form class="event-form" id="eventForm">
+          <p class="event-form__title">Добавить мероприятие</p>
+          <div class="event-form__input-wrp">
+            <label for="eventName">Название</label>
+            <input type="text" id="eventName" name="name">
+          </div>
+          <div class="event-form__input-wrp">
+            <label for="eventDate">Дата</label>
+            <input type="text" id="eventDate" name="date">
+          </div>
+          <div class="event-form__input-wrp">
+            <label for="eventStartTime">Время начала</label>
+            <input class="timepicker" type="text" id="eventStartTime" name="start">
+          </div>
+          <div class="event-form__input-wrp">
+            <label for="eventEndTime">Время конца</label>
+            <input class="timepicker" type="text" id="eventEndTime" name="end">
+          </div>
+          <div class="event-form__button-wrp">
+            <button type="submit" class="btn btn-primary mb-2" id="eventAdd">Добавить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Built files will be auto injected -->
+  </body>
+</html>
